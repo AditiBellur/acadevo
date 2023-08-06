@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="C:\Users\aditi\Downloads\a puprle.jpg">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>Acadevo</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rasa Webchat Integration</title>
+	<!-- Include any necessary meta tags, styles, or other scripts here -->
+<title>Chatbot</title>
+</head>
+	
+<body>
+	<script>
+  !(function () {
+	let e = document.createElement("script"),
+	  t = document.head || document.getElementsByTagName("head")[0];
+	(e.src = "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+	  // Replace 1.x.x with the version that you want
+	  (e.async = true),
+	  (e.onload = () => {
+		window.WebChat.default(
+		  {
+			initPayload: '/greet',
+			customData: { language: "en" },
+			socketUrl: "http://localhost:5005", // Change this line
+			title: 'Rasa Bot',
+			subtitle: 'Say Hi to get started',
+			// add other props here
+		  },
+		  null
+		);
+  }),
+	  t.insertBefore(e, t.firstChild);
+  })();
+</script>
+	
+	
+	
+</body>
+</html>
+	
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="acadevo.jpg"alt="logo"></div>
+			<ul>
+				<li><a href="#portfolio_section">Portfolio</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="searchbar.png"alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">Get Started</a>
+			<img src="menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>Empowering Minds</p>
+				<h5>Learning is the key that unlocks the doors of knowledge, and with knowledge, we pave the path to endless possibilities</h5>
+				<div class="play">
+					
+				</div>
+			</div>
+			<div class="svg-image">
+				<img src="rightimg.jpeg" alt="svg">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="close.png" alt=""></div>
+			<div class="user">
+				<img src="F:\new size.jpg" alt="Username">
+				<p>roshank9419</p>
+			</div>
+			<ul>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#portfolio_section">Portfolio</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+				<li><a href="#feedBACK">Feedback</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+<!-- Some Popular Subjects -->
+	<div class="title">
+		<span>Popular Subjects on Acadevo</span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center><div class="cbox">
+		<div class="det"><a href="jee.html"><img src="JJBJJJJJJ.png">Mathematics</a></div>
+		<div class="det"><a href="gate.html"><img src="SCIENCE LOGO.jpg">Science</a></div>
+		<div class="det"><a href="computer_courses.html"><img src="SS.jpeg">Social Science</a></div>
+		<div class="det"><a href="english.html"><img src="ENGLISHSSS.jpeg">English</a></div>
+		</div></center>
+		<div class="cbox">
+		<div class="det"><a href="sanskrit.html"><img src="SAMSKRUTHA.jpeg">Sanskrit</a></div>
+		<div class="det"><a href="hindi.html"><img src="hindiaa.jpeg">Hindi</a></div>
+		
+		</div>
+	</div>
+
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">About</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="images/extra/e3.jpg">
+				</div>
+				<div class="side-text">
+					<h2>What you think about us ?</h2>
+					<p>Welcome to Acadevo.com, your gateway to knowledge and growth. We are dedicated to fostering a love for learning and empowering individuals to reach new heights in their personal and professional endeavors. With a curated selection of engaging courses and top-notch resources, our platform caters to learners of all backgrounds and interests. Our passionate team of educators is committed to delivering high-quality content that sparks curiosity and drives success. Join us on this transformative learning journey, and together, let's unlock the doors to endless possibilities.</p>
+				</div>
+		</div>
+	</div>
+
+
+
+
+
+				<div class="diffSection" id="team_section">
+					<center>
+					  <p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">We're the Creators</p>
+					</center>
+					<div class="totalcard">
+					  <!-- Team Member 1 -->
+					  <div class="card">
+						<center>
+						  <img src="F:\new size.jpg">
+						</center>
+						<center>
+						  <div class="card-title">Aditi P Bellur</div>
+						  <div id="detail">
+							<p>Artificial Intelligence & Data Science</p>
+							<div class="duty"></div>
+							<a href="https://www.linkedin.com/in/roshan-kumar-a18b76179/" target="_blank">
+							  <button class="btn-roshan">Follow +</button>
+							</a>
+						  </div>
+						</center>
+					  </div>
+				  
+					  <!-- Team Member 2 -->
+					  <div class="card">
+						<center>
+						  <img src="WhatsApp Image 2023-08-05 at 18.09.46.jpg">
+						</center>
+						<center>
+						  <div class="card-title">Vasukiran</div>
+						  <div id="detail">
+							<p>“ Artificial Intelligence & Data Science “</p>
+							<div class="duty"></div>
+							<a href="https://www.linkedin.com/in/roshan-kumar-a18b76179/" target="_blank">
+							  <button class="btn-akhil">Follow +</button>
+							</a>
+						  </div>
+						</center>
+					  </div>
+				  
+					  <!-- Team Member 3 -->
+					  <div class="card">
+						<center>
+						  <img src="path_to_image3.jpg">
+						</center>
+						<center>
+						  <div class="card-title">Sneha</div>
+						  <div id="detail">
+							<p>“ Artificial Intelligence & Data Science “</p>
+							<div class="duty"></div>
+							<a href="https://www.linkedin.com/in/teammember3/" target="_blank">
+							  <button class="btn-teammember3">Follow +</button>
+							</a>
+						  </div>
+						</center>
+					  </div>
+				  
+					  <!-- Team Member 4 -->
+					  <div class="card">
+						<center>
+						  <img src="path_to_image4.jpg">
+						</center>
+						<center>
+						  <div class="card-title">Sanjana</div>
+						  <div id="detail">
+							<p>“ Artificial Intelligence & Data Science “</p>
+							<div class="duty"></div>
+							<a href="https://www.linkedin.com/in/teammember4/" target="_blank">
+							  <button class="btn-teammember4">Follow +</button>
+							</a>
+						  </div>
+						</center>
+					  </div>
+				  
+					  <!-- Team Member 5 -->
+					  <div class="card">
+						<center>
+						  <img src="path_to_image5.jpg">
+						</center>
+						<center>
+						  <div class="card-title">Niharika</div>
+						  <div id="detail">
+							<p>“ Artificial Intelligence & Data Science “</p>
+							<div class="duty"></div>
+							<a href="https://www.linkedin.com/in/teammember5/" target="_blank">
+							  <button class="btn-teammember5">Follow +</button>
+							</a>
+						  </div>
+						</center>
+					  </div>
+				  
+					  <!-- Team Member 6 -->
+					  <div class="card">
+						<center>
+						  <img src="path_to_image6.jpg">
+						</center>
+						<center>
+						  <div class="card-title">Ruchitha</div>
+						  <div id="detail">
+							<p>“ Artificial Intelligence & Data Science “</p>
+							<div class="duty"></div>
+							<a href="https://www.linkedin.com/in/teammember6/" target="_blank">
+							  <button class="btn-teammember6">Follow +</button>
+							</a>
+						  </div>
+						</center>
+					  </div>
+					</div>
+				  </div>
+				  
+
+
+
+<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p></center>
+		</div>
+		<a href="jee.html"><div class="s-card"><img src="SM.png"><p>Study Materials</p></div></a>
+		<a href="gate.html"><div class="s-card"><img src="bbb.jpeg"><p>Building Concepts for Exams</p></div></a>
+		
+		<a href="computer_courses.html"><div class="s-card"><img src="download.png"><p>Sample Papers </p></div></a>
+		<a href="https://www.extramarks.com/"><div class="s-card"><img src="perfo.jpeg"><p>Performance and Ranking Report</p></div></a>
+		<a href="https://www.vidhyaa.in/blog/scholarship-for-10th-passed-students"><div class="s-card"><img src="scholarship.png"><p>Scholarship details</p></div></a>
+		<a href="https://www.pw.live/online-test-class-tenth"><div class="s-card"><img src="IQ.png"><p>Daily Brain Teasing Questions to Improve IQ</p></div></a>
+		<a href="index.html"><div class="s-card"><img src="24 bar7.png"><p>24x7 Online Support</p></div></a>
+	</div>
+
+
+		
+
+<!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:aditipbellur123@gmail.com" method="post" enctype="text/plain">
+				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+<!-- FEEDBACK -->
+	<div class="title2" id="feedBACK">
+		<span>Give Feedback</span>
+		<div class="shortdesc2">
+			<p>Please share your valuable feedback to us</p>
+		</div>
+	</div>
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="mailto:aditipbellur123@gmail.com" method="post" enctype="text/plain">
+				<label>Your Name</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div>
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #D8BFD8,#800080); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">“Hope you had a good learning”</div></marquee>
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src= style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="fb2.png"></a>
+					<a href="#"><img src="insta2.png"></a>
+					<a href="#"><img src="tt2.png"></a>
+					<a href="#"><img src="ytube.png"></a>
+					<a href="#"><img src="linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2021 Created By Acadevo, All Rights Reserved.</p>
+				<br><p><img src="location.png"> Global Academy of Technology<br>Banglore,Karnataka-560098</p><br>
+				<p><img src="phone.png"> +91-9876543213<br><img src="mail.png">&nbsp; avcadevoed@gmail.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
